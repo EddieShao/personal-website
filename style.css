@@ -1,0 +1,136 @@
+:root {
+    font-family: "Montserrat", sans-serif;
+
+    /* Colors */
+    --black: #343231;
+    --gray: #DDDDDD;
+    --mint: #E3FFF3;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    color: var(--black);
+    font-weight: normal;
+    text-align: center;
+}
+
+h2 {
+    color: var(--black);
+    font-weight: normal;
+    font-size: larger;
+    text-align: center;
+}
+
+h3 {
+    color: var(--black);
+    font-weight: normal;
+    font-size: x-large;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+
+p {
+    color: var(--black);
+    font-weight: normal;
+    margin: 0;
+}
+
+footer {
+    background-color: var(--mint);
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.main-container {
+    margin: auto;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+img.profile-picture {
+    display: block;
+    width: 9em;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 50%;
+    border: 2px solid var(--black);
+}
+
+.social-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+a.social-link {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+img.social-icon {
+    width: 2.5em;
+    height: auto;
+}
+
+hr.divider {
+    color: var(--gray);
+}
+
+.row {
+    display: block;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+img.project-banner {
+    width: 100%;
+    height: auto;
+    border-radius: 0.4em;
+}
+
+/* For desktop screens... */
+@media only screen and (min-width: 768px) {
+
+    h2 {
+        font-size: x-large;
+    }
+
+    h3 {
+        margin-top: 0;
+    }
+
+    footer {
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .main-container {
+        max-width: 60em;
+    }
+
+    /* Line break that only shows up in mobile. Use to fix spacing issues. */
+    br.mobile-br {
+        display: none;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    img.project-banner {
+        max-width: 20em;
+        width: auto;
+    }
+
+    .project-text {
+        margin-left: 1.5em;
+    }
+
+}
